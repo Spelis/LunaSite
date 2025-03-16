@@ -6,6 +6,20 @@
             <a href="https://github.com/spelis/lunabot" class="btn btn-ghost text-xl rounded-full"
                 >GitHub</a
             >
+            <div class="tooltip tooltip-bottom tooltip-info" data-tip="Releasing on the 19th">
+                <progress
+                    class="progress w-28"
+                    :value="
+                        Math.floor(
+                            ((Date.now() - new Date('2025-03-16').getTime()) /
+                                (new Date('2025-03-19').getTime() -
+                                    new Date('2025-03-16').getTime())) *
+                                100,
+                        )
+                    "
+                    max="100"
+                ></progress>
+            </div>
         </div>
         <div class="navbar-center">
             <a class="btn-ghost btn text-xl rounded-full"
