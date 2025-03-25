@@ -11,19 +11,18 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tailwindcss(), vue(), vueJsx(), vueDevTools()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    plugins: [tailwindcss(), vue(), vueJsx(), vueDevTools()],
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
+        },
     },
-    
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/pages/main/index.html'),
-        test: resolve(__dirname, 'src/pages/nested/test.html'),
-      },
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'src/pages/main/index.html'),
+                test: resolve(__dirname, 'src/pages/test/test.html'),
+            },
+        },
     },
-  },
 })

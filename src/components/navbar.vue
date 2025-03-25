@@ -1,11 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 </script>
-
 <template>
     <header class="navbar bg-neutral shadow-sm">
         <div class="navbar-start">
-            <a class="btn-ghost btn text-xl btn-circle avatar"><img src="/icon.png" /></a>
+            <a class="btn-ghost btn text-xl btn-circle avatar" href="/"><img src="/icon.png" /></a>
         </div>
         <div class="navbar-center">
             <a
