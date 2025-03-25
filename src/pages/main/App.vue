@@ -30,8 +30,17 @@ import Footer from '../../components/footer.vue'
             </div>
             <div class="divider divider-horizontal" />
             <div class="mx-auto my-5 flex-[0.5] place-items-center flex justify-center">
-                <img src="/icon.png" alt="Luna Logo" class="w-32 h-32 animate-bounce" />
-                <span class="text-5xl font-bold text-center">LunaBot</span>
+                <div class="text-center relative w-[50%]">
+                    <img
+                        src="/icon.png"
+                        alt="Luna Logo"
+                        class="w-32 h-32 m-[auto] animate-bounce"
+                    />
+                    <span
+                        class="text-5xl font-bold text-center absolute top-[75%] left-[50%] translate-[-50%] backdrop-filter-[blur(8px)] outline-1 px-16 tracking-wide"
+                        >LunaBot</span
+                    >
+                </div>
             </div>
             <div class="divider divider-horizontal" />
             <div class="mx-5 my-5 flex-[0.25] place-items-center">
@@ -77,32 +86,10 @@ import Footer from '../../components/footer.vue'
                 </div>
                 <div class="card bg-base-200 shadow-xl">
                     <div class="card-body">
-                        <h3 class="card-title">Utility</h3>
-                        <p>Helpful utilities to enhance your Discord server experience</p>
-                    </div>
-                </div>
-                <div class="card bg-base-200 shadow-xl">
-                    <div class="card-body">
-                        <h3 class="card-title">Utility</h3>
-                        <p>Helpful utilities to enhance your Discord server experience</p>
-                    </div>
-                </div>
-                <div class="card bg-base-200 shadow-xl">
-                    <div class="card-body">
-                        <h3 class="card-title">Utility</h3>
-                        <p>Helpful utilities to enhance your Discord server experience</p>
-                    </div>
-                </div>
-                <div class="card bg-base-200 shadow-xl">
-                    <div class="card-body">
-                        <h3 class="card-title">Utility</h3>
-                        <p>Helpful utilities to enhance your Discord server experience</p>
-                    </div>
-                </div>
-                <div class="card bg-base-200 shadow-xl">
-                    <div class="card-body">
-                        <h3 class="card-title">Utility</h3>
-                        <p>Helpful utilities to enhance your Discord server experience</p>
+                        <h3 class="card-title">Music and other voice stuff</h3>
+                        <p>
+                            Listen to music right from discord and create Temporary voice channels
+                        </p>
                     </div>
                 </div>
                 <div class="card bg-base-200 shadow-xl">
@@ -134,6 +121,15 @@ import Footer from '../../components/footer.vue'
                             <div class="card shadow bg-base-100" />
                             <div class="card shadow bg-base-100" />
                         </div>
+                    </div>
+                </div>
+                <div class="card bg-base-200 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title">And more!</h3>
+                        <p>
+                            With <span class="text-primary">YOUR</span> help, Luna can become
+                            something truly <span class="text-primary">AMAZING</span>
+                        </p>
                     </div>
                 </div>
             </div>
